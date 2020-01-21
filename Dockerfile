@@ -44,5 +44,6 @@ RUN rm -rf /tmp/dolibarr
 
 EXPOSE 80
 
+RUN chmod 777
 COPY docker-run.sh /usr/local/bin/
 ENTRYPOINT ["docker-run.sh"]
